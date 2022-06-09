@@ -1,7 +1,6 @@
-class CreateDoses < ActiveRecord::Migration[6.1]
+class CreateMeasurements < ActiveRecord::Migration[6.1]
   def change
-    create_table :doses do |t|
-      t.string :measurement
+    create_table :measurements do |t|
       t.references :cocktail, null: false, foreign_key: true
       t.references :ingredient, null: false, foreign_key: true
 
