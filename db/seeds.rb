@@ -26,4 +26,4 @@ ingredients.each do |ingredient|
   )
 end
 
-puts "Ingredients created"
+puts "102 Ingredients created"
