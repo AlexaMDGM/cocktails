@@ -12,9 +12,21 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
 
-    <h1 class="p-5 bg-indigo-400 rouded-xl w-2/5">Hello World</h1>
-    <h1 class="p-5 bg-indigo-400 rouded-xl w-2/5">Hello Lex</h1>
+    <%# <h1 class="p-5 bg-indigo-400 rounded-xl w-2/5">Hello World</h1> %>
   </head>
+
+<header class="shadow-sm bg-black">
+  <div class="max-w-screen-xl p-4 mx-auto ">
+    <div class="flex items-center justify-between space-x-4 lg:space-x-10">
+      <div class="flex lg:w-0 lg:flex-1">
+        <span class="text-2xl text-white "><%= link_to "Game Night Cocktail List", root_path %></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
 
   <body>
     <%= yield %>
