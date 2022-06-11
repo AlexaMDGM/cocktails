@@ -1,8 +1,11 @@
-<h2><%= @cocktail.name %></h2>
+<h1 class="font-black text-center">Game Night Cocktail SHOW PAGE</h1>
+
+
+
+<h1><%= @cocktail.name %></h2>
 <p><%= @cocktail.description %></p>
 <p><%= @cocktail.photo %></p>
 
-<h1 class="font-black text-center">Game Night Cocktail SHOW PAGE</h1>
 
 
 <%= link_to "Delete #{@cocktail.name}",
@@ -11,6 +14,6 @@
             data: { confirm: "Are you sure?" } %>
 
 
-<a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/cocktails/2">
+<%# <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/cocktails/2">
   Delete the spoon
-</a>
+</a> %>
