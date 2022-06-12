@@ -11,17 +11,18 @@
                             required: true,
                             autofocus: false,
                             label: false,
-                            input_html: {placeholder: "Ex. Mojito", class: "font-headings mt-1 mb-4 block w-full rounded-2xl border-neediegreen bg-white focus:border-gray-300 focus:bg-white focus:ring-0"}%>
+                            input_html: {placeholder: "Ex. Mojito", class: "font-headings mt-1 mb-4 block w-full rounded-3xl border-neediegreen bg-white focus:border-gray-300 focus:bg-white focus:ring-0"}%>
               <h1> Description</h1>
                 <%= f.input :description,
                             required: false,
                             autofocus: true,
                             label: false,
-                            input_html: {placeholder: "Mojito and me are mint to be", class: "font-headings mt-1 mb-4 block w-full rounded-2xl border-neediegreen bg-white focus:border-gray-300 focus:bg-white focus:ring-0"}%>
+                            input_html: {placeholder: "Mojito and me are mint to be", class: "font-headings mt-1 mb-4 block w-full rounded-xl border-black bg-white focus:border-gray-300 focus:bg-white focus:ring-0"}%>
                <h1> Upload a photo of your Cocktail</h1>
                 <%= f.input :photo, as: :file,
                             label: false,
-                            required: false %>
+                            required: false,
+                            input_html: {class: "font-headings mt-1 mb-4 block w-full rounded-2xl bg-white focus:border-gray-300 focus:bg-white focus:ring-0 text-sm"} %>
               </div>
               <div class="form-actions mt-3 flex justify-center">
                 <%= f.button  :submit, "Submit Cocktail",  class: "font-headings py-2 px-5 border rounded-3xl text-white" %>
@@ -40,20 +41,6 @@
 
 
   </div>
-
-    <%# <h1>Name of Cocktail</h1> %>
-      <%# <div class ="bg-pink-400" > %>
-        <%# <%= form_for(@cocktail) do |f| %> %>
-          <%# <%= f.label :name %> %>
-          <%# <%= f.text_field :name %> %>
-          <%# <%= f.label :description %> %>
-          <%# <%= f.text_field :description %> %>
-          <%# <%= f.submit "Add Cocktail" %> %>
-<%# /        <% end %> %>
-      <%# </div> %>
-
-
-
 
 
 

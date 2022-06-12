@@ -6,6 +6,7 @@
 <p><%= @cocktail.description %></p>
 <p><%= @cocktail.photo %></p>
 
+<%= link_to "Add Ingredients to this Cocktail", new_list_bookmark_path(@Cocktail) %>
 
 
 <%= link_to "Delete #{@cocktail.name}",
